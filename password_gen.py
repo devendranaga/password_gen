@@ -28,7 +28,7 @@ class pw_gen:
 
     def has_atleast_n_special_chars(self, password, pw_len):
         count = 0
-        n = pw_len / 3
+        n = pw_len / 2
         for pw_item in password:
             if pw_item in self.special_chars:
                 count += 1
