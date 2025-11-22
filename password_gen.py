@@ -53,7 +53,6 @@ class pw_gen:
             i += 1
 
         if self.has_atleast_n_special_chars(password, pw_len):
-            print("need to regen.. weak password")
             return (password, False)
 
         return (password, True)
@@ -74,4 +73,4 @@ if __name__ == "__main__":
         if res == True:
             break
 
-    print("password is :" + password)
+    print("password is " + password)
